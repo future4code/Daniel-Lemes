@@ -1,0 +1,60 @@
+a {
+    margin: 0 1rem;
+    position: relative;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    background-color: red;
+    color: #fff;
+}
+
+h3 {
+    background-color: red;
+    border-radius: 2rem;
+}
+
+ul li {
+    background-color: rgba(141, 81, 197, 0.171);
+    border-radius: 100rem;
+    margin: 0.5rem 0;
+}
+
+ul li span {
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 100rem;
+    padding: 0.3rem 1rem;
+    display: block;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+ul li span:hover {
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(169, 83, 195);
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    text-align: end;
+    padding-right: 5rem;
+}
+
+nav a:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transition: 0.3s;
+}
+
+nav a:hover:after, nav a.active:after {
+    width: 100%;
+}
