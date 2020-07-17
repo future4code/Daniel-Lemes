@@ -1,0 +1,10 @@
+#main {
+    background-image: url(./img/fundo_site.jpg);
+}
+#link-foto, #description, #price, #amount {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+}

@@ -1,0 +1,150 @@
+.intro {
+    background-color: rgb(119, 221, 93);
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.style {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 1rem;
+}
+
+.description {
+    box-shadow: 2px 2px 2px 2px black;
+    margin: 3rem 0;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(54, 89, 184, 0.863);
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 1rem;
+}
+
+.page_down {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 2rem;
+}
+
+.img {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.log {
+    text-align: center;
+}
+
+.down {
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.end {
+   
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.list {
+    text-align: center;
+    margin: 4rem 0 1rem 0;
+}
+
+
+
+.dark-datail {
+    color: red;
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.dark-datail:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 37rem;
+    width: 50px;
+    height: 2px;
+    background-color: red;
+}
+
+.form-add {
+    text-align: center;
+}
+
+.products {
+    text-align: center;
+    color: red;
+    margin: 2rem 0;
+}
+
+.form-user {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.size-one {
+    width: 90%;
+}
+
+.size-one {
+    width: 80%;
+}
+
+.size-two {
+    width: 70%;
+}
+
+.size-three {
+    width: 40%;
+}
+
+.size-four {
+    width: 20%;
+}
+
+.size-five {
+    width: 70%;
+}
+
+.size-six {
+    width: 50%;
+}
+
+.size-seven {
+    width: 30%;
+}
+
+.size-eight {
+    width: 60%;
+}
+
+.size-nine {
+    width: 40%;
+}
+.size-ten {
+    width: 75%;
+}

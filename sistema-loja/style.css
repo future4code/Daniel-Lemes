@@ -1,0 +1,165 @@
+#main {
+    background-image: url(./img/fundo_site.jpg);
+}
+
+nav {
+    background-color: rgb(169, 83, 195);
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+nav a:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transition: 0.3s;
+}
+
+nav a:hover:after, nav a.active:after {
+    width: 100%;
+}
+
+a {
+    margin: 0 1rem;
+    position: relative;
+    color: #fff;
+}
+table {
+    text-align: center;
+    background-color: aqua;
+    width: 100%;
+}
+tr {
+    text-align: center;
+    background-color: green;
+}
+th {
+    background-color: blueviolet;
+    padding: 2rem;
+    color: #fff;
+}
+td {
+    padding: 2rem 2rem;
+    color: #fff;
+}
+#link-foto, #description, #price, #amount {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+form {
+    background-color: rgba(0, 0, 0, 0.424);
+    padding: 5rem 0;
+}
+button {
+    font-size: 2rem;
+    background-color: red;
+    border: 1px solid black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.intro {
+    background-color: rgb(119, 221, 93);
+    text-align: center;
+    padding: 10px 10px;
+}
+.style {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.description {
+    box-shadow: 2px 2px 2px 2px black;
+    margin: 3rem 0;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(54, 89, 184, 0.863);
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 1rem;
+}
+.page_down {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 2rem;
+}
+.img {
+    text-align: right;
+    margin-right: 1rem;
+}
+.log {
+    text-align: center;
+}
+.down {
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 2rem;
+    width: 100%;
+}
+.end {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 2rem;
+    width: 100%;
+}
+.list {
+    text-align: center;
+    margin-top: 4rem;
+}
+.names {
+    text-align: center;
+}
+.dark-datail {
+    color: red;
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.dark-datail:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 37rem;
+    width: 50px;
+    height: 2px;
+    background-color: red;
+}
+.form-add {
+    text-align: center;
+}
+.products {
+    text-align: center;
+    color: red;
+    margin: 2rem 0;
+}
+.form-user {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+}

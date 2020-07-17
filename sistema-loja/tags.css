@@ -1,0 +1,83 @@
+nav {
+    background-color: rgb(169, 83, 195);
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+nav a:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transition: 0.3s;
+}
+
+nav a:hover:after, nav a.active:after {
+    width: 100%;
+}
+
+a {
+    margin: 0 1rem;
+    position: relative;
+    color: #fff;
+}
+
+table {
+    text-align: center;
+    background-color: aqua;
+    width: 100%;
+}
+
+tr {
+    text-align: center;
+    background-color: green;
+}
+
+th {
+    background-color: blueviolet;
+    padding: 2rem;
+    color: #fff;
+}
+
+td {
+    padding: 2rem 2rem;
+    color: #fff;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.424);
+    padding: 5rem 0;
+}
+
+button {
+    font-size: 2rem;
+    background-color: red;
+    border: 1px solid black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+ul li{
+    background-color: rgba(141, 81, 197, 0.171);
+    border-radius: 100rem;
+    margin: 0.5rem 0;
+}
+ul li span {
+    background-color: blueviolet;
+    color:#fff;
+    border-radius: 100rem;
+    padding: 0.3rem 1rem;
+    display:block;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+ul li span:hover{
+    width:100%;
+
+}
