@@ -8,9 +8,11 @@
         <link rel="stylesheet" href="./add-produto.html">
         <link rel="stylesheet" href="funcionarios.html">
         <link rel="stylesheet" href="./index.html">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" type="text/css" href="./ids.css">
+        <link rel="stylesheet" type="text/css" href="./class.css">
+        <link rel="stylesheet" type="text/css" href="./tags.css">
         <link rel="icon" href="./img/MMStore.png">
-     
-        <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Adicionar Produto</title>
 </head>
 <body>
@@ -23,28 +25,28 @@
     <div class="log">
         <img src="./img/MMStore.png">
     </div>
-    <h2>Adicionar Produto</h2>
-    <form action="">
-        <div>
-            <label for="link-foto">Link para foto: </label>
+    <h2 class="products">Adicionar Produto</h2>
+    <form action="#">
+        <div class="form-user">
+            <label class="detail" for="link-foto">Link para foto: </label>
             <input type="url" id="link-foto" name="link-foto">
         </div>
         
-        <div>
-            <label for="description">Descrição do produto: </label>
+        <div class="form-user">
+            <label class="detail" for="description">Descrição do produto: </label>
             <!-- Adicione o id apropriado para o input abaixo -->
             <input type="text" id="description" name="description">
         </div>
         
-        <div>
-            <label for="price">Preço (em R$): </label>
+        <div class="form-user">
+            <label class="detail" for="price">Preço (em R$): </label>
             <!-- Adicione o id apropriado e o type para receber números abaixo -->
             <input type="text" id="price" name="price">
         </div>
         
-        <div>
+        <div class="form-user">
             <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-            <label for="amount" >Quantidade disponível: </label>
+            <label class="detail" for="amount" >Quantidade disponível: </label>
             <input type="text" id="amount" name="amount" >
         </div>
 
