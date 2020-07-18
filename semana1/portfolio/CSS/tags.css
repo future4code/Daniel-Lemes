@@ -1,24 +1,29 @@
+body {
+    background-color: rgba(0, 0, 0, 0.383);
+}
 a {
     margin: 0 1rem;
     position: relative;
-    color: #fff;
+    color:#fff;
 }
-
-h2 {
-    text-align: center;
-    background-color: red;
-    color: #fff;
+img {
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px 0 black;
 }
-
 h3 {
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.609);
     border-radius: 2rem;
+    color:#fff;
+}
+ul {
+    margin-bottom: 1rem;
 }
 
 ul li {
     background-color: rgba(141, 81, 197, 0.171);
     border-radius: 100rem;
     margin: 0.5rem 0;
+    width: 50%;
 }
 
 ul li span {
@@ -57,4 +62,10 @@ nav a:after {
 
 nav a:hover:after, nav a.active:after {
     width: 100%;
+}
+figcaption {
+    background-color: rgba(0, 0, 0, 0.342);
+    color:#ffff;
+    border-radius: 100rem;
+    text-align: center;
 }
