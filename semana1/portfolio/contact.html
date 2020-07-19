@@ -16,13 +16,66 @@
 </head>
 
 <body>
-    <footer>
+    <header>
         <nav>
             <a href="./index.html">PortFolio</a>
             <a href="about.html">About</a>
             <a href="skills.html">Skills</a>
             <a href="contact.html" class="active">Contact</a>
         </nav>
+    </header>
+   
+    <form name="formuser" action="#" method="post"> 
+       
+        <div class="form-user-data">
+           <h1 id="contact">Contact</h1>
+           <p id="email_transform"></p>
+           <div>
+               <label for="name"><em>Name</em></label><br>
+               <input type="text"  placeholder="tapy your name"id="name"/>
+            </div>
+            <div>
+                <label for="email"><em>E-mail</em></label><br>
+                <input type="email" placeholder="tapy your E-mail" maxlength="60" id="email" />
+            </div>
+            <div>
+                <label for="phone"><em>Telephone</em></label><br>
+                <input type="email" placeholder="tapy your Telephone" maxlength="13" id="phone" />
+            </div>
+        </div>
+        <div class="form-user">
+            <div> 
+               <label for="msg" ><em>Message</em></label><br>
+                <textarea id="msg"placeholder="tapy your message" cools="20" rows="8"></textarea><br>
+                <button class="btn_submit" type="button" value="enviar"onclick="validateEmail(formuser.email)">Submit</button>
+                <script src="./JS/main.js "></script>
+           
+            </div> 
+        </div>
+    </form>
+    <footer id="color">
+        <div id="network">
+            <h3>Social Networks</h3>
+        </div>
+        <div class="grid-footer">
+            <div class="grid-style">
+                <a href="https://github.com/DanielSLemes" target="_blank"><img src="./img/github.png" width="100rem">
+                    <figcaption>GITHUB </figcaption>
+                </a>
+            </div>
+            <div class="grid-style">
+                <a href="https://www.linkedin.com/in/daniel-s-lemes/" target="_blank"><img src="./img/linkedin.jpg"
+                        width="80rem">
+                    <figcaption>LINKEDIN </figcaption>
+                </a>
+            </div>
+            <div class="grid-style">
+                <a href="#"><img src="./img/insta.jpg" width="80rem">
+                    <figcaption>INSTAGRAM </figcaption>
+                </a>
+            </div>
+        </div>
+        <p id="copy">Copyright &copy 2020 Daniel Lemes</p>
     </footer>
 </body>
 
