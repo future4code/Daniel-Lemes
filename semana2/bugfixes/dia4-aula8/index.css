@@ -101,8 +101,9 @@ div:nth-child(2), div:last-child {
 }
 
 table {
-    width: 100%;
+    width: 60%;
     text-align: center;
+    margin:auto auto;
 }
 
 td button {
@@ -120,6 +121,7 @@ td button:target {
 td button:hover {
     background-color: #7e6f2c;
 }
+
 
 .container-do-search {
     margin-top: 20px;
