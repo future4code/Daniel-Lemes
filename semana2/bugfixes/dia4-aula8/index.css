@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
 }
+
 h2 {
     background-color: #fe7e02;
     padding: 10px 5px 10px 5px;
@@ -52,13 +53,12 @@ div img {
 .container {
     height: 500px;
     text-align: center;
-  padding-top: 10vh;
+    padding-top: 10vh;
 }
 
 .icone {
     height: 15px;
 }
-
 
 /** 
   *
@@ -77,7 +77,6 @@ div img {
 
 #container-para-comprar {
     background-color: #e7eb90;
-    
 }
 
 #container-para-comprar>p {
@@ -87,20 +86,19 @@ div img {
     display: block;
 }
 
-
 /**
   *
   *  ESTILOS COMPRAR 
   *
   **/
 
-div:nth-child(2),
-div:last-child {
+div:nth-child(2), div:last-child {
     text-align: center;
 }
 
 table {
-    width: 60%;
+    width: 100%;
+    text-align: center;
 }
 
 td button {
@@ -115,7 +113,6 @@ td button {
     margin-top: 20px;
     height: 100px;
 }
-
 
 #back-button {
     background-color: white;
