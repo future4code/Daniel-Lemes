@@ -1,0 +1,136 @@
+.container {
+    display: flex;
+}
+
+.container-footer {
+    background-color: black;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    border-radius: 3rem 3rem 0 0;
+}
+
+.title {
+    text-align: center;
+    color: black;
+    font-size: 5rem;
+}
+
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.galery>div {
+    margin: 1rem 0 5rem 0;
+}
+
+.about_me {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    margin-left: 2.5rem;
+}
+
+.click {
+    color: black;
+}
+
+.site {
+    color: blue;
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.item3 {
+    grid-column: 3/ span 1;
+    grid-row: 1;
+    margin-top: 3rem;
+}
+
+.size-one {
+    width: 80%;
+}
+
+.size-two {
+    width: 60%;
+}
+
+.size-three {
+    width: 50%;
+}
+
+.soft {
+    text-align: center;
+}
+
+.used {
+    text-align: center;
+    color: red;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.teaching {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+    color: grey;
+}
+
+.grid-footer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 20px;
+}
+
+.grid-style {
+    text-align: center;
+    font-size: 30px;
+}
+
+.form-user-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+
+.form-user {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+.skill{
+    text-align: center;
+    font-family: cursive;
+    margin:0.5rem 0 1rem 0;
+    font-size: 1.5rem;
+}
