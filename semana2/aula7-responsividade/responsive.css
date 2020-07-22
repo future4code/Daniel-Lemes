@@ -1,0 +1,44 @@
+@media screen and (min-device-width:420px) and (max-device-width:600px) {
+    .green-block {
+        width: 100%;
+        margin: 0 2vw 5vh 2vw;
+    }
+    .white-block {
+        width: 40vw;
+    }
+    .white-block-eleven {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+    }
+}
+
+@media screen and (min-device-width:320px) and (max-device-width:420px) {
+    .blue-block {
+        width: 100%;
+        margin: 0 2vw 5vh 2vw;
+    }
+    .yellow-block {
+        width: 100%;
+        margin: 0 2vw 5vh 2vw;
+    }
+    .green-block {
+        width: 100%;
+        margin: 0 2vw 5vh 2vw;
+    }
+    .black-block {
+        width: 100%;
+        margin: 0 2vw 5vh 2vw;
+    }
+    .white-block-eleven {
+        width: 100%;
+        margin: 0 2vw 0 2vw;
+    }
+    .white-block {
+        width: 100%;
+        margin: 0 2vw 5vh 2vw;
+    }
+}
