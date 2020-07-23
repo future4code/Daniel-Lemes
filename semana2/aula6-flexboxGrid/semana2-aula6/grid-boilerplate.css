@@ -1,0 +1,39 @@
+    div {
+        border: 2px solid #313B3E;
+        border-radius: 10px;
+    }
+    
+    .container {
+        width: 600px;
+        height: 600px;
+        background-color: #A8BBC6;
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    #item1 {
+        background-color: #FF4136;
+        /*Vermelho*/
+        grid-row: 2/5;
+    }
+    
+    #item2 {
+        background-color: #2ECC40;
+        /*Verde*/
+        grid-column: 2/3;
+    }
+    
+    #item3 {
+        background-color: #0074D9;
+        /*Verde*/
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    #item4 {
+        background-color: #FFDC00;
+        /*Amarelo*/
+        grid-column: 2/4;
+        grid-row: 3/6;
+    }
