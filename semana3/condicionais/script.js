@@ -221,7 +221,7 @@ console.log(novoArray[i])
 for(let i = 0; i < maisUmArray.length; i++)
 console.log("o elemento do index " +i+ " é " +maisUmArray[i])*/
 // e. Resposta= 
-let arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
+/*let arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
 let valorMaximo = arrayOriginal[0]
 let valorMinimo = arrayOriginal[3]
 for(let i = 0; i < arrayOriginal.length; i++){
@@ -231,4 +231,37 @@ for(let i = 0; i < arrayOriginal.length; i++){
      valorMinimo = arrayOriginal[i]
  }
 }
-console.log(`O maior elemento é ${valorMaximo} e o menor é ${valorMinimo}`)
+console.log(`O maior elemento é ${valorMaximo} e o menor é ${valorMinimo}`)*/
+
+// DESAFIO 1
+/*Resposta= seria
+ 0
+ 00
+ 000
+ 000*/
+
+
+
+
+
+
+
+ //DESAFIO 2
+ /* Resposta= */
+
+  let primeiroJogador = prompt("escolha um número")
+   console.log("Vamos Jogar!")
+  let segundoJogador = prompt("chute um número")
+    console.log(`o número chutado foi ${segundoJogador}`)
+ while( primeiroJogador=segundoJogador)
+ if(primeiroJogador < segundoJogador){
+     console.log("ERROU.número escolhido é menor" )
+      segundoJogador = prompt("chute um número")
+     console.log(`o número chutado foi ${segundoJogador}`)
+ } else if (primeiroJogador > segundoJogador){
+     console.log("ERROU.número escolhido é m")
+     segundoJogador = prompt("chute um número")
+     console.log(`o número chutado foi ${segundoJogador}`)
+ }else{
+    console.log("Acertou. O número de tentativas foi:",segundoJogador)
+ }
