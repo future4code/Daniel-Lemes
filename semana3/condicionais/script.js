@@ -51,7 +51,7 @@ if(gender==="fantasia" && price<=15){
 }else{
     console.log("Escolha outro filme")
 }*/
-let fullName = prompt("digite seu nome completo")
+/*let fullName = prompt("digite seu nome completo")
     console.log("nome do Cliente:",fullName)
 
 let gameType = prompt("coloque IN para internacional e DO para doméstico").toUpperCase()
@@ -188,4 +188,47 @@ else if (gameType === "IN" && gameStep === "SF" && category === 2) {
     console.log("Valor total:", total)
 } else {
     console.log("ERROR")
+}*/
+//EXERCÍCIOS DE 30/07/2020
+//EXERCÍCIO 1.
+/*O código abaixo está fazendo um laço, e incrementando um valor a cada laço até que o indíce seja menor que 5. o que aparecerá no console é o valor 10*/
+
+//EXERCÍCIO 2.
+//a. Resposta= 19,21,23,25,27.30  //
+/*b. Resposta= não,não dá pra acessar o indíce com for of, só se fosse com o for.EX:let lista = [10, 11, 12, 15, 18, 19, 21, 23, 25, 27, 30]
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i]) {
+        console.log([lista[i]])
+    }
+}*/
+//EXERCÍCIO 3.
+// a. Resposta= console.log(arrayOriginal[i])
+
+// b. Resposta= console.log(arrayOriginal[i]/10)
+/*let arrayOriginal = [80,30,130,40,60,21,70,120,90,103,110,55]
+for(let i = 0; i < arrayOriginal.length; i++){
+ console.log(arrayOriginal[i]/10)
+}*/
+
+//c. Resposta= console.log(novoArray[i])
+/*let novoArray = [80,30,130,40,60,120,90,110]
+for (let i = 0; i < novoArray.length; i++) {
+console.log(novoArray[i])
+}*/
+
+// d. Resposta= 
+/*let maisUmArray = ["80", "30", "130", "40", "60", "21", "70", "120", "90", "103", "110", "55"]
+for(let i = 0; i < maisUmArray.length; i++)
+console.log("o elemento do index " +i+ " é " +maisUmArray[i])*/
+// e. Resposta= 
+let arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
+let valorMaximo = arrayOriginal[0]
+let valorMinimo = arrayOriginal[3]
+for(let i = 0; i < arrayOriginal.length; i++){
+  if(arrayOriginal[i] > valorMaximo){
+    valorMaximo = arrayOriginal[i]
+ }else if(arrayOriginal[i] <valorMinimo){
+     valorMinimo = arrayOriginal[i]
+ }
 }
+console.log(`O maior elemento é ${valorMaximo} e o menor é ${valorMinimo}`)
