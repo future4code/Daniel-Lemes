@@ -1,0 +1,36 @@
+.value {
+    margin-bottom: 2vh;
+}
+
+button {
+    display: flex;
+    margin-top: 2vh;
+}
+
+.filter {
+    display: inline;
+}
+
+.minimumValueDiv {
+    margin: 2vh 0;
+}
+h3{
+    display:inline
+}
+#detais {
+    margin-top: 15vh;
+}
+
+#extract {
+    margin-top: 15vh;
+}
+
+#tarefa-um {
+    width: 50vw;
+}
+
+#description {
+    margin-top: 2vh;
+}
+
+#minimumValue {}
