@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="main.js" defer></script>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    
+    <title>Controle de Despesas</title>
+    
+</head>
+<body>
+    <section>
+        <h1 id="main-text">Controlador de Despesas</h1>
+        <h2>Cadastrar Despesa</h2
+        <div class="value">
+           <label for="tarefa">Valor</label>
+           <input type="number" id="tarefa">
+        </div>
+        <div class="type">
+            <label for="tarefa-um">Tipo</label>
+            <input type="toString" id="tarefa-um">
+            <select name="despesas" id="despesas">
+               <option value="food">Comida</option>
+               <option value="clothes">Roupas</option>
+               <option value="toys">Brinquedos</option>
+            </select> 
+        </div>  
+           <label for="description">Descrição</label>
+           <input type="text" id="description">
+        <button type="button" onclick="buttonClear()" onclick="limparTexto()" >Cadastrar Despesa</button>
+   
+        <p id="colocarObjetos"></p>
+    </section>
+
+
+<section>
+    <h1 id="detais">Despesas detalhada</h1>
+    <div class="type">
+        <div>
+            <label for="tarefa-dois">Tipo</label>
+            <input type="text" id="tarefa-dois">
+            <select name="dias-semana" id="dias-semana">
+                <option value="food">Comida</option>
+                <option value="clothes">Roupas</option>
+                <option value="toys">Brinquedos</option>
+            </select>
+        </div> 
+        <div class="minimumValueDiv">
+        <label for="minimumValue">Valor Mínimo</label>
+         <input type="number" id="minimumValue">
+        </div>
+        <div>
+            <label for="maximumValue">Valor máximo</label>
+        <input type="number" id="maximumValue">
+    </div>
+        
+        
+        <button class="filter" type="button">Filtrar</button>
+        <button class="filter" type="button" >Limpar Filtros</button>
+    </div>
+</section>
+
+<section>
+    <h1 id="extract">Extrato</h1>
+    <h3>Valor Total:</h3>
+    <label for="valueFull"></label>
+    <input type="text" id="valueFull">
+</section>
+    
+</body>
+</html>
