@@ -6,7 +6,7 @@ import ImagemButton from './components/ImagemButton/ImagemButton';
 import Daniel from "./components/img/daniel.jpg";
 import Email from "./components/img/email.png";
 import Endereco from "./components/img/endereco.jpg";
-
+import Inventar from "./components/img/inventar.png";
 function App() {
   return (
     <div className="App">
@@ -24,12 +24,12 @@ function App() {
         />
       </div>
 
-      <div className="page-section-container">
+      <div className="page-section-container1">
         <h2>Experiências profissionais</h2>
         <CardGrande 
-          imagem="https://s3.amazonaws.com/future4.com.br/static/headf4-c492117ca2373dc85ca81bf715b3dc2a.png" 
-          nome="Labenu" 
-          descricao="Formando desenvolvedores para o mercado de trabalho!" 
+          imagem={Inventar}
+          nome="Inventar Art Comunicação Visual" 
+          descricao="Empresa na área de Comunicação Visual, voltada para fachadas, envelopamentos de veículos, Letras-Caixa e adesivos" 
         />
         
         <CardGrande 
