@@ -37,7 +37,7 @@ function App () {
 
         <CardGrande
           imagem={LF}
-          nome="Labenu"
+          nome="LF Sinalização"
           descricao="Empesa de Sinalização. "
         />
       </div>
