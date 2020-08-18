@@ -6,7 +6,7 @@ class PerguntaFechada extends React.Component {
             <select>
                 <option >"Ensino médio Incompleto"</option>
                 <option >"Ensino médio Completo"</option>
-                <option >"Ensino Superior Incompleto"</option>
+                <option >"Ensino Superior Incompleto" </option>
                 <option >"Ensino Suprior Completo"</option>
             </select>  
             
