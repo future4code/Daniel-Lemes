@@ -6,7 +6,8 @@ export default class App extends React.Component {
   state = {
   usuarios: [],
     nomeUsuario: "",
-    emailUsuario:""
+    emailUsuario:"",
+    id:""
   };
 
   pegarUsuarios() {
@@ -46,7 +47,7 @@ export default class App extends React.Component {
 
     request
       .then((resposta) => {
-        alert("usuario adicionado",resposta);
+        alert(`o usúario ${this.state.nomeUsuario} E-mail ${this.state.emailUsuario} foi adicionado`);
         this.pegarUsuarios();
         this.setState({ nomeUsuario: "",emailUsuario:"" });
       })
@@ -54,31 +55,28 @@ export default class App extends React.Component {
         console.log("Erro");
       });
   }
-   deletarUsuario() {
-    const request = axios.delete(
-      'https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/:id',
-      {
-        headers: {
+
+  deletarUsuario = (id) =>{
+    axios.delete( 
+     `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`,
+     {
+       headers: {
           Authorization: "daniel-lemes-jackson"
-        }
-      }
-    );
-    request
-      .then((resposta) => {
-         this.setState({ usuarios: resposta.data });
-  
-        console.log(resposta)
-      })
-      .catch((erro) => {
-        console.log("Ocorreu um erro");
-      });
+       }
+     } 
+     ).then((resposta) => {  
+      
+      alert(`o item ${resposta.id} foi excluido`)
+    })
+    .catch((erro) => {
+      console.log("Ocorreu um erro");
+    });
   }
-
-
+  
+  
   componentDidMount() {
     this.pegarUsuarios();
   }
-
   render() {
     const onChangeInput = (evento) => {
       this.setState({ nomeUsuario: evento.target.value ,
@@ -88,7 +86,7 @@ export default class App extends React.Component {
       this.setState({emailUsuario: evento.target.value ,
       });
     };
-
+ 
     return (
       <div>
         <h1>Criar Usuarios</h1>
@@ -100,7 +98,8 @@ export default class App extends React.Component {
         
         {this.state.usuarios.map((item) => {
           return <p key={item.id}>{item.name}
-           <button onClick={() => this.deletarUsuario()}> Deletar </button>
+           <button key={item.id} onClick={ () => this.deletarUsuario(item.id) }> Deletar </button>
+            
           </p>     
         })}
       </div>
