@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavBarConfig,LogoConfig,Botao,Botao2 } from "../components/NavBar/styled"
+import { NavBarConfig,LogoConfig,Botao,Botao2 } from "./NAVBAR/styled"
 
 
 
