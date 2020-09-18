@@ -3,8 +3,8 @@ import Header from "../../Components/Header/Header";
 import Body from "../../Components/Body/Body";
 import Footer from "../../Components/Footer/Footer";
 import LOGO from "../../IMG/LOGO.png";
-import axios from "axios"
-
+import axios from "axios";
+import { AnimationSignUp } from "../../Components/Animation/AnimationSignUp"
 
 export default function Home(props) {
 
@@ -15,8 +15,10 @@ export default function Home(props) {
   
     <Header image={LOGO}
             nameTrip={"Trips" } 
-            nameUp={"Sign up"}
-            nameIn={"Sign in"}/>
+            nameUp={"travel registration"}
+            nameIn={<AnimationSignUp />}
+            details={"Details"}
+            aplication={"Aplication"} />
              
             <div />
             <Body />

@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react"
 import { BASE_URL } from "../../Utilization/BaseUrl"
 import axios from "axios"
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import { goToHomePage } from "../../Router/Router";
 
+
 const TripsDetailPage = () => {
-    const [userId, setUserId] = useState("")
+    const [userId, setUserId] = useState({})
 
-
+    const pathParams = useParams();
     const history = useHistory();
 
     useEffect(() => {
@@ -29,27 +30,26 @@ const TripsDetailPage = () => {
                 }
             })
             .then((response) => {
-                console.log("caiu aki nesse???", response.data)
-                setUserId(response.data.trips)
+                console.log("caiu aki no tripDetail agora neh???", response.data)
+                setUserId(response.data.trip.candidates)
             })
             .catch((err) => {
                 console.log(err.message);
             });
     };
     return (
-
         <div>
-            <button onClick={getTripDetail}>mostrar</button>          
-            <p>{getTripDetail}</p>
-                     
-                
+{/* 
+            { userId.map((item) => {
+                console.log(item)
+                return (
+                    <h3>{item && item.candidates}</h3>
+                )
+            })
+            } */}
 
-
-        
-
-            <h1>olaaaaaaaaaaa</h1>
-            <button onClick={() => goToHomePage(history)}>voltar</button>
         </div>
+
 
     )
 

@@ -4,8 +4,8 @@ import Home from "../PageScrens/Home/Home.jsx";
 import  AplicationFormPage from "../PageScrens/AplicationFormPage/AplicationFormPage.jsx";
 import ListTripPage from "../PageScrens/ListTripPage/ListTripPage.jsx";
 import LoginPage from "../PageScrens/LoginPage/LoginPage.jsx";
-import TripsDetailPage from "../PageScrens/TripsDetailPage/TripsDetailPage.jsx"
-
+import TripsDetailPage from "../PageScrens/TripsDetailPage/TripsDetailPage.jsx";
+import CreatetripPage from "../PageScrens/CreateTripPage/CreateTripPage.jsx"
 function Hook() {
     return (
         <div>
@@ -16,6 +16,9 @@ function Hook() {
                     </Route>
                     <Route exact path="/details">
                         < TripsDetailPage />
+                    </Route>
+                    <Route exact path="/create">
+                        < CreatetripPage />
                     </Route>
                     <Route exact path="/aplication">
                         < AplicationFormPage />

@@ -3,14 +3,14 @@ import { goBack } from "../../Router/Router";
 import { useHistory } from "react-router-dom";
 import axios from "axios"
 import LOGO from "../../IMG/LOGO.png"
-import { Body, Div } from "./styled"
+import { Body, Div, Flex, Nome, InfosContainer, AnimationButtom } from "./styled"
 import { NavBar, MenuNavBarBack, Text } from "../../Components/Header/styled"
 import { AnimationBack } from "../../Components/Animation/AnimationBack"
 import Footer from '../../Components/Footer/Footer';
-
+import { AnimationRegister } from '../../Components/Animation/AnimationRegister';
 const Trip = () => {
     const [viagens, setViagens] = useState([])
-    
+
 
     const history = useHistory();
 
@@ -25,7 +25,7 @@ const Trip = () => {
             .then((response) => {
                 console.log(response.data.trips)
                 setViagens(response.data.trips)
-               
+
 
             })
             .catch((erro) => {
@@ -54,18 +54,46 @@ const Trip = () => {
                 viagens.map((item) => {
                     return (
                         <Div key={item.id}>
-                        
-                           <div>
-                              <h1>Planeta:</h1>
-                              <h2> {item.planet}</h2> 
-                            </div><hr/>
+                            <InfosContainer>
+                                <Flex>
+                                    <h1>Viagem:</h1>
+                                    <Nome> {item.name}</Nome>
+                                </Flex>
+                                <Flex>
+                                    <h1>Planeta:</h1>
+                                    <Nome> {item.planet}</Nome>
+                                </Flex>
+                                <Flex>
+                                    <h1>Data:</h1>
+                                    <Nome> {item.date}</Nome>
+                                </Flex>
+                                <Flex>
+                                    <h1>Duração:</h1>
+                                    <Nome> {item.durationInDays} Dias</Nome>
+                                </Flex>
+                                <Flex>
+                                    <h1>Descrição:</h1>
+                                    <Nome> {item.description}</Nome>
+                                </Flex>
+
+                            </InfosContainer>
+
+
+                            <AnimationButtom>
+                              <AnimationRegister />
+
+                            </AnimationButtom>
+                             
+                            
+
+
                         </Div>
 
 
                     )
                 })
             }
-            
+
             <Footer />
         </Body >
     );
