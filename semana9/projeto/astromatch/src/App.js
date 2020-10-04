@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
-import Cards from "./components/NavBar/Cards"
+import Cards from "./components/NAVBAR/Cards"
 import Matches from "./components/Matches"
 const ContainerPrincipal = styled.div ` 
 background-color: grey;
@@ -26,10 +26,33 @@ function App(props) {
         back={onClickCards}/>;
       }
   }
+    
+  useEffect(() => {
+    getTrips();
+  }, []);
+  const getTrips = () => {
+    axios
+        .get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/daniel/trips", {
+        })
+        .then((response) => {
+            console.log(response.data)
+            
+          
+        })
+        .catch((erro) => {
+            console.log(erro);
+        });
+};
+
+
   return (
-    <ContainerPrincipal className="App">
+    <div>
+      {getTrips}
+      <ContainerPrincipal className="App">
   {renderize()}
     </ContainerPrincipal>
+    </div>
+    
   );
 }
 export default App;

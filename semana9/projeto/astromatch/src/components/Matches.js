@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios"
 import { BASE_URL } from "./URL/Url"
-import { Div, TextoClear, ContainerMatches, ButtonClear, ButtonC, ImgClear, NavLine,Botao,LogoConfig } from "../components/NavBar/styled"
+import { Div, TextoClear, ContainerMatches, ButtonClear, ButtonC, ImgClear, NavLine,Botao,LogoConfig } from "./NAVBAR/styled"
 import NavBar from "./NavBar"
 import Logo from "../img/logo.png"
 
