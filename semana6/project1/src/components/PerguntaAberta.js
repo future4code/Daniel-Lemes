@@ -8,12 +8,6 @@ class PerguntaAberta extends React.Component {
                 <h3>2. Qual sua idade?</h3>
                 <input ></input>
                 <h3>3. Qual seu email?</h3>
-                <input ></input>
-                <div>
-                    <h3>{this.props.texto}</h3>
-                  
-                    <h3>{this.props.texto1}</h3>
-                </div>
                 
             </div>
 
