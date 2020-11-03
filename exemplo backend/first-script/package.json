@@ -1,0 +1,23 @@
+{
+   "name": "first-script",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "start": "clear && echo \"Starting application...\n\" && tsc && node ./build/index.js",
+      "carros": "clear && echo \"Starting application...\n\" && tsc && node ./build/carros.js",
+      "build": "tsc",
+      "dev": "ts-node-dev ./src/index.ts",
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+   },
+   "devDependencies": {
+      "typescript": "^4.0.3",
+      "ts-node-dev": "^1.0.0",
+      "@types/node": "^14.14.0"
+   }
+}
